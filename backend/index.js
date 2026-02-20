@@ -18,7 +18,7 @@ app.use(cors());
 
 //Health Checking
 app.get('/health',(req,res)=>{
-    res.json("This is the health check using Jenkins CICD");
+    res.json("This is the health check");
 });
 
 // ADD TRANSACTION
