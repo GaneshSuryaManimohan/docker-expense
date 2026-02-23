@@ -48,7 +48,7 @@ ports:
 ``` 
 1. Host → 8083 , Container → 80
 
-2. Access application: http://<server-ip>:8083
+2. Access application: http://`<server-ip>`:8083
 
 ---
 
