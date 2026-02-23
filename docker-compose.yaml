@@ -2,10 +2,17 @@ name: expense-tracker
 networks:
   default:
     name: expense
+volumes:
+  mysql-data:
+    external: true
 services:
   mysql:
     image: mysql:v1.0
     container_name: mysql
+    volumes: 
+      - source: mysql-data
+        target: /var/lib/mysql
+        type: volume
   backend:
     image: backend:v1.0
     container_name: backend
