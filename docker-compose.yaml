@@ -7,8 +7,7 @@ volumes:
     external: true #we need to create this volume before running the docker-compose file, using the command: docker volume create mysql-data
 services:
   mysql:
-    #image: mysql:v1.0
-    image: tgsmanimohan/mysql:v1.0
+    image: mysql:v1.0
     container_name: mysql
     volumes: 
       - source: mysql-data
